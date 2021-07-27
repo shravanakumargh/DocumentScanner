@@ -1,0 +1,21 @@
+{
+  "name": "DocumentScannerPlugin",
+  "version": "1.0.0",
+  "description": "edge detection in camera and edge detection in selected image from gallery.crop options for both camera and gallery",
+  "cordova": {
+    "id": "cordova.plugin.documentscannerplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "shravanakumar honnapur",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shravanakumargh/DocumentScanner.git"
+  }
+}

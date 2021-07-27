@@ -1,0 +1,10 @@
+repositories {
+     google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        jcenter() 
+}
+
+dependencies {
+    implementation 'com.github.shravanakumargh:myLibrary:1.0.13'
+}
