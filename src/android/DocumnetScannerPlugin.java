@@ -84,7 +84,7 @@ public class DocumnetScannerPlugin extends CordovaPlugin {
               information =
                 StorageControler.getFileToByte(
                   cordova.getActivity().getApplicationContext(),
-                  Uri.parse(information),targetWidth,targetHeight,qua
+                  Uri.parse(information),targetWidth,targetHeight,quality,sourceType,CROP_ENABLE
                 );
             } catch (Exception e) {}
           }
