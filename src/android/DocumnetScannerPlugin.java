@@ -32,7 +32,7 @@ public class DocumnetScannerPlugin extends CordovaPlugin {
   int targetHeight = 0;
   int targetWidth = 0;
   int sourceType = 0;
-  int quality=0;
+  int quality = 0;
   boolean CROP_ENABLE = false;
 
   @Override
@@ -56,13 +56,12 @@ public class DocumnetScannerPlugin extends CordovaPlugin {
     targetHeight = jsonObject.getInt("targetHeight");
     targetWidth = jsonObject.getInt("targetWidth");
     sourceType = jsonObject.getInt("sourceType");
-    quality=jsonObject.getInt("quality");
+    quality = jsonObject.getInt("quality");
     intent.putExtra("sourceType", sourceType);
     intent.putExtra("CROP_ENABLE", CROP_ENABLE);
     intent.putExtra("targetHeight", targetHeight);
     intent.putExtra("targetWidth", targetWidth);
     intent.putExtra("edgeDetection", jsonObject.getBoolean("edgeDetection"));
-    
 
     cordova.getActivity().startActivityForResult(intent, 400);
     PluginResult r = new PluginResult(PluginResult.Status.NO_RESULT);
@@ -84,7 +83,12 @@ public class DocumnetScannerPlugin extends CordovaPlugin {
               information =
                 StorageControler.getFileToByte(
                   cordova.getActivity().getApplicationContext(),
-                  Uri.parse(information),targetWidth,targetHeight,quality,sourceType,CROP_ENABLE
+                  Uri.parse(information),
+                  targetWidth,
+                  targetHeight,
+                  quality,
+                  sourceType,
+                  CROP_ENABLE
                 );
             } catch (Exception e) {}
           }
