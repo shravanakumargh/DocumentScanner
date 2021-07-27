@@ -6,5 +6,5 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.shravanakumargh:myLibrary:1.0.13'
+    implementation 'com.github.shravanakumargh:myLibrary:1.0.14'
 }
